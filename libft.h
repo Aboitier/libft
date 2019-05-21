@@ -6,7 +6,7 @@
 /*   By: aboitier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 16:59:47 by aboitier          #+#    #+#             */
-/*   Updated: 2019/05/07 20:44:18 by aboitier         ###   ########.fr       */
+/*   Updated: 2019/05/21 20:45:34 by aboitier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <string.h>
+# include "get_next_line.h"
 
 typedef struct		s_list
 {
