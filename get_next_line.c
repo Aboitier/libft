@@ -6,12 +6,12 @@
 /*   By: aboitier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/11 21:58:11 by aboitier          #+#    #+#             */
-/*   Updated: 2018/12/29 19:18:35 by aboitier         ###   ########.fr       */
+/*   Updated: 2019/05/28 18:15:42 by aboitier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include "libft/libft.h"
+#include "libft.h"
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
