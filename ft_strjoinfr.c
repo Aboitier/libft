@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_words.c                                   :+:      :+:    :+:   */
+/*   ft_strjoinfr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aboitier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/27 15:46:42 by aboitier          #+#    #+#             */
-/*   Updated: 2019/07/30 18:46:57 by aboitier         ###   ########.fr       */
+/*   Created: 2019/07/30 17:04:27 by aboitier          #+#    #+#             */
+/*   Updated: 2019/07/30 17:04:29 by aboitier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_count_words(char *str)
-{
-	int i;
-	int words;
+#include "libft.h"
+#include <stdlib.h>
+#include <stdio.h>
 
-	i = 0;
-	words = 0;
-	while (str[i])
-	{
-		if (str[i] != '\n' && str[i] != '\t' && str[i] != ' ' && str[i])
-			words++;
-		while ((str[i] != '\n' && str[i] != '\t' && str[i] != ' ') && str[i])
-			i++;
-		while ((str[i] == '\n' || str[i] == '\t' || str[i] == ' ') && str[i])
-			i++;
-	}
-	return (words);
+char	*ft_strjoinfr(char *s1, char const *s2)
+{
+	char		*new_str;
+	size_t		len_s1s2;
+
+	if (!s1 || !s2)
+		return (NULL);
+	len_s1s2 = ft_strlen(s1) + ft_strlen(s2);
+	if (!(new_str = (char *)malloc(sizeof(char) * (len_s1s2 + 1))))
+		return (NULL);
+	ft_strcpy(new_str, s1);
+	ft_strcat(new_str, s2);
+	free(s1);
+	return ((char *)new_str);
 }

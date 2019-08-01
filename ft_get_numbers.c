@@ -6,13 +6,13 @@
 /*   By: aboitier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/07 20:42:45 by aboitier          #+#    #+#             */
-/*   Updated: 2019/05/07 20:43:07 by aboitier         ###   ########.fr       */
+/*   Updated: 2019/07/30 18:46:50 by aboitier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     get_numbers(char *str, int nb_numbers)
+int		get_numbers(char *str, int nb_numbers)
 {
 	int numbers;
 	int i;
@@ -34,4 +34,3 @@ int     get_numbers(char *str, int nb_numbers)
 	}
 	return (i);
 }
-
