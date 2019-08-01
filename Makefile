@@ -6,7 +6,7 @@
 #    By: aboitier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/16 15:29:02 by aboitier          #+#    #+#              #
-#    Updated: 2019/07/30 17:24:26 by aboitier         ###   ########.fr        #
+#    Updated: 2019/08/01 19:46:58 by aboitier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,8 +26,8 @@ SRCS = 	ft_lstadd.c     ft_memset.c     ft_strcpy.c     ft_strncpy.c\
 		ft_strrev.c		ft_recursive_power.c	ft_print_words_tables.c ft_itoa.c\
 		ft_memmove.c    ft_strcmp.c     ft_strncmp.c	ft_strrchr.c\
 		ft_sort_integer_table.c ft_addonechar.c ft_putnbr_base.c ft_count_words.c\
-		ft_rm_word.c ft_get_numbers.c ft_strclen.c ft_strcdup.c get_next_line.c \
-		ft_strjoinfr.c ft_strsplitfr.c
+		ft_rm_word.c ft_get_numbers.c ft_strclen.c ft_strcdup.c get_next_line.c ft_ischar.c\
+		ft_ltoa.c ft_addonecharpos.c ft_fillchar.c ft_strjoinfr.c ft_strsplitfr.c \
 		
 OBJECTS = $(SRCS:.c=.o)
 INCLUDE = libft.h

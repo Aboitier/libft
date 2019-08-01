@@ -6,7 +6,7 @@
 /*   By: aboitier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 16:59:47 by aboitier          #+#    #+#             */
-/*   Updated: 2019/07/30 17:24:04 by aboitier         ###   ########.fr       */
+/*   Updated: 2019/08/01 19:46:21 by aboitier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,11 @@ typedef struct		s_list
 
 int					ft_atoi(const char *str);
 char				*ft_addonechar(char **str, char c);
+char				*ft_addonecharpos(char **str, char c, int pos);
 void				ft_bzero(void *s, size_t n);
 int					ft_copyuntil(char **dst, char *src, char c);
 int					ft_count_words(char *str);
+char				*ft_fillchar(long width, long len, char c);
 int					get_numbers(char *str, int nb_numbers);
 char				*ft_rm_word(char **s, char *word, int ws);
 int					ft_isalnum(int c);
@@ -36,6 +38,7 @@ int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
 char				*ft_itoa(int n);
+char				*ft_ltoa(long long n);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
